@@ -4,14 +4,7 @@ body {
   line-height: 1;
 }
 
-textarea{
-  background: transparent;
-  border: none;
-  resize: none;
-  color: #000000;
-  border-left: 1px solid black;
-  padding: 10px;
-}
+
 
 .jumbotron {
   text-align: center;
@@ -21,10 +14,22 @@ textarea{
   border-bottom: 10px solid black;
 }
 
+textarea{
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+}
+
+/* textarea class */
 .description{
   white-space: pre-wrap;
 }
 
+
+/*main row class */
 .time-block{
   text-align: center;
   border-radius: 15px;
@@ -40,6 +45,8 @@ textarea{
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  padding: 0 5px 0 0;
+  text-align: right;
 }
 
 .past {
