@@ -76,3 +76,26 @@ textarea{
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
+
+.focus {
+  background-color: #ADD8E6;
+}
+
+
+/* past */
+.blur1{
+  background-color: #d3d3d3;
+  
+}
+
+/* present */
+.blur2 {
+  background-color: #ff6961;
+  
+}
+
+/* future */
+.blur3 {
+  background-color: #77dd77;
+  
+}
