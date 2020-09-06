@@ -1,4 +1,4 @@
-$("#currentDay").text(moment().format("MMMM Do YYYY"));
+$("#currentDay").text(moment().format("dddd MMMM Do YYYY"));
 
 var currentHour = moment().hour();
 
@@ -25,7 +25,21 @@ $(document).ready(function () {
     $("#hour17 .description").val(localStorage.getItem("hour17"));
 
 
-  
+    var timeCounter = 9;
+
+
+   $(".time-block").each(function (e) {
+        console.log(currentHour, timeCounter)
+        if (timeCounter < currentHour) {
+            $(this).addClass("past");
+        } else if (timeCounter === currentHour) {
+            $(this).addClass("present");
+        } else  {
+            $(this).addClass("future");
+        }
+        timeCounter++;
+    });
+
 })
 
 
