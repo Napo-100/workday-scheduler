@@ -11,9 +11,9 @@ $(document).ready(function () {
         var time = $(this).parent().attr("id");
 
         localStorage.setItem(time, hourText);
-
     });
 
+    //to retrieve information from local storage
     $("#hour9 .description").val(localStorage.getItem("hour9"));
     $("#hour10 .description").val(localStorage.getItem("hour10"));
     $("#hour11 .description").val(localStorage.getItem("hour11"));
@@ -27,7 +27,7 @@ $(document).ready(function () {
 
     var timeCounter = 9;
 
-
+// function to set row color based on time
    $(".time-block").each(function (e) {
         console.log(currentHour, timeCounter)
         if (timeCounter < currentHour) {
